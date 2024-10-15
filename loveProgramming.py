@@ -1,3 +1,20 @@
+nums = [ 0, 1, 1, 1, 1, 2, 2, 3, 3, 4]
+
+i = 0
+for j in range(1, len(nums)):
+  if nums[j] != nums[i]:
+    i +=1
+    nums[i] = nums[j]
+i+=1
+newArray = nums[:i]
+dotArrayLength = len(nums)-i
+dotArray = []
+for k in range(dotArrayLength):
+  dotArray.append("_")
+result = newArray + dotArray
+print(newArray)
+        
+"""
 from typing import List
 
 class Solution:
@@ -29,6 +46,9 @@ new_length = sol.removeDuplicates(nums)
 # Output results
 print(f"New length: {new_length}")
 print(f"Modified nums: {nums[:new_length]} + {[None]*(len(nums)-new_length)}")
+
+
+"""
 
 # from typing import List
 
