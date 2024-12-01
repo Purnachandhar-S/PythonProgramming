@@ -1,3 +1,6 @@
+
+
+
 def find_mean(num_list):
     print("Mean: "+str(round(sum(num_list)/(len(num_list)),2)))
 
@@ -24,9 +27,30 @@ def find_mode(num_list):
     print("Mode: ",end="")
     for i in result:
         print(i, end=" ")
+    print(y)
+    print(num_list)
 
-num_list = list(map(int, input().split()))
+num_list = [14, 14, 14, 25, 25, 28, 32, 35, 36, 42, 50, 56, 61] # list(map(int, input().split()))
 num_list.sort()
 find_mean(num_list)
 find_median(num_list)
 find_mode(num_list)
+
+
+# """
+# Mean: 35.73
+# Median: 35
+# Mode: 14 {14: 2, 25: 1, 28: 1, 32: 1, 35: 1, 36: 1, 42: 1, 50: 1, 56: 1, 61: 1}
+# [14, 14, 25, 28, 32, 35, 36, 42, 50, 56, 61]
+# PS C:\Users\hp\Desktop\work\python_codes> python MeanMedianMode.py
+# Mean: 34.83
+# Median: 33.5
+# Mode: 14 25 {14: 2, 25: 2, 28: 1, 32: 1, 35: 1, 36: 1, 42: 1, 50: 1, 56: 1, 61: 1}
+# [14, 14, 25, 25, 28, 32, 35, 36, 42, 50, 56, 61]
+# PS C:\Users\hp\Desktop\work\python_codes> python MeanMedianMode.py
+# Mean: 33.23
+# Median: 32
+# Mode: 14 {14: 3, 25: 2, 28: 1, 32: 1, 35: 1, 36: 1, 42: 1, 50: 1, 56: 1, 61: 1}
+# [14, 14, 14, 25, 25, 28, 32, 35, 36, 42, 50, 56, 61]
+
+# """
